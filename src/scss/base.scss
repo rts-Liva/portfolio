@@ -1,0 +1,6 @@
+@use './placeholders/root.scss';
+
+body {
+    background-color: root.$pastel-blue;
+    color: root.$black;
+}

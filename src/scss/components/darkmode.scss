@@ -1,0 +1,10 @@
+@use '../placeholders/root.scss';
+
+body.dark {
+    background-color: root.$grey-blue;
+    color: root.$white;
+
+    a {
+        color: root.$white;
+    }
+}

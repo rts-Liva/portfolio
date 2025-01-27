@@ -1,0 +1,21 @@
+@use '../placeholders/root.scss';
+
+.about-me {
+    margin-top: .8rem;
+    padding-inline: 1rem;
+
+    &__profile {
+        width: 10rem;
+        border-radius: .5rem;
+    }
+
+    &__title {
+        font-size: 1em;
+        margin-bottom: .3rem;
+        color: root.$light-purple;
+    }
+
+    &__text {
+        font-size: .75em;
+    }
+}
