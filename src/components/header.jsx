@@ -22,7 +22,7 @@ function Header({ current }) {
     }
     return (
         <header className="header">
-            <Link to='/'><img src="logo.svg" alt="logo" className="header__logo" /></Link>
+            <Link to='/'><img src="/logo.svg" alt="logo" className="header__logo" /></Link>
             <nav>
                 <ul className="header__list">
                     <li><Link to='/' className="header__list-item" style={style.home}>Hjem</Link></li>
