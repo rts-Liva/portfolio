@@ -1,21 +1,46 @@
 @use '../placeholders/root.scss';
 
 .about-me {
-    margin-top: .8rem;
+    margin-block: .8rem 1.3rem;
     padding-inline: 1rem;
 
     &__profile {
         width: 10rem;
         border-radius: .5rem;
+        float: right;
     }
 
     &__title {
-        font-size: 1em;
+        font-size: 1.3em;
         margin-bottom: .3rem;
-        color: root.$light-purple;
+        font-weight: 550;
     }
 
     &__text {
         font-size: .75em;
+    }
+}
+
+.skills {
+    padding-inline: 1rem;
+
+    &__heading {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    &__list {
+        list-style: none;
+        margin-top: .5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+
+        &-item {
+            font-size: .75em;
+            padding: .3rem .5rem;
+            background-color: root.$transparent-black;
+            border-radius: .8rem;
+        }
     }
 }

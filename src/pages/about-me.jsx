@@ -10,9 +10,19 @@ function AboutMePage() {
                 <img src="profile-image.PNG" alt="Image of me" className="about-me__profile" />
                 <h1 className="about-me__title">Liva Kuhlmann</h1>
                 <p className="about-me__text">Jeg er en 17-årig webudvikler studerende.</p>
-                <p className="about-me__text">Min uddannelse er jeg i gang med at tage på Roskilde Tekniske Skole, hvor jeg går på hovedforløbet. Den første gang jeg rørte noget med kodning, var ved et online kursus hvor vi lærte at bruge Scratch. Dengang gik jeg stadig i 9. klasse og jeg kiggede aldrig mere ind på kodning igen indtil jeg startede på grundforløb 1 hos RTS.</p>
-                <p className="about-me__text">Her stød jeg ind på rigtig kodning. (Hvis jeg må kalde det det.) Jeg lærte simpelt HTML og CSS, JS var ikke noget jeg lærte meget af tilbage i GF1. Jeg var faktisk startet på GF1 fordi jeg ville tage mediegrafikker efter. Men som jeg var der, blev jeg rigtig glad for at kode og valgte at jeg også ville tage webudvikler udannelsen.</p>
-                <p className="about-me__text">Jeg har lært meget siden da og nu søger jeg praktikplads.</p>
+                <p className="about-me__text">Jeg går på hovedforløbet hos Roskilde Tekniske Skole og er klar til at søge praktikplads. Jeg lærte først at kode da jeg startede på grundforløb 1 på samme skole. Nu går jeg på hovedforløbet og er kommet langt siden da.</p>
+            </section>
+            <section className="skills">
+                <h2 className="skills__heading">Mine erfaringer</h2>
+                <ul className="skills__list">
+                    <li className="skills__list-item">HTML5</li>
+                    <li className="skills__list-item">JS</li>
+                    <li className="skills__list-item">CSS</li>
+                    <li className="skills__list-item">SCSS</li>
+                    <li className="skills__list-item">Node.js</li>
+                    <li className="skills__list-item">React</li>
+                    <li className="skills__list-item">MongoDB</li>
+                </ul>
             </section>
             <Footer />
         </>
