@@ -7,4 +7,28 @@ body.dark {
     a {
         color: root.$white;
     }
+
+    .header {
+        border-bottom: 3px solid root.$transparent-black;
+    }
+
+    h1 {
+        color: root.$light-purple;
+    }
+
+    h2 {
+        color: root.$white;
+    }
+
+    .project {
+        border-bottom: 3px solid root.$purple;
+    }
+
+    .skills__list-item {
+        background-color: root.$purple;
+    }
+
+    .footer {
+        background-color: root.$transparent-black;
+    }
 }
