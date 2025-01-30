@@ -9,9 +9,9 @@ function ProjectsPage() {
     useEffect(() => {
         async function fetchLatestProjects() {
             const response = await fetch('/api/projects/latest');
-            // const data = await response.json();
+            const data = await response.json();
 
-            // setProjects(data);
+            setProjects(data);
         }
 
         fetchLatestProjects();

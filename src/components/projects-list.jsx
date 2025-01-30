@@ -6,13 +6,15 @@ function ProjectsList({ projects }) {
         <>
             <h1 className='projects__heading'>Mine projekter</h1>
             <div className="projects">
-                <div className="project">
-                    <Link to={`/details/${projects._id}`}><img src="projekt-moviez.jpg" alt="project poster" className="project__poster" /></Link>
-                    <div className="project__info">
-                        <Link to={`/details/${projects._id}`}><h2 className="project__name">Projekt Moviez</h2></Link>
-                        <a href="https://github.com/rts-Liva/projekt-moviez-rts-Liva" target="_blank" className="project__link">Github repository</a>
+                {projects.length > 0 && projects.map((project, index) => (
+                    <div className="project" key={index}>
+                        <Link to={`/details/${project._id}`}><img src={project.path} alt="project poster" className="project__poster" /></Link>
+                        <div className="project__info">
+                            <Link to={`/details/${project._id}`}><h2 className="project__name">{project.name}</h2></Link>
+                            <a href={project.github} target="_blank" className="project__link">Github repository</a>
+                        </div>
                     </div>
-                </div>
+                ))}
             </div>
         </>
     );
