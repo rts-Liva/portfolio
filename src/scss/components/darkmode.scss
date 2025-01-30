@@ -9,7 +9,7 @@ body.dark {
     }
 
     .header {
-        border-bottom: 3px solid root.$transparent-black;
+        border-bottom: 3px solid root.$dark-grey;
     }
 
     h1 {
@@ -20,7 +20,7 @@ body.dark {
         color: root.$white;
     }
 
-    .project {
+    .project:not(:last-of-type) {
         border-bottom: 3px solid root.$purple;
     }
 
@@ -29,6 +29,6 @@ body.dark {
     }
 
     .footer {
-        background-color: root.$transparent-black;
+        background-color: root.$dark-grey;
     }
 }
