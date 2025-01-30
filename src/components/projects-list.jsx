@@ -3,8 +3,8 @@ import '../scss/components/projects.scss';
 
 function ProjectsList({ projects }) {
     return (
-        <>
-            <h1 className='projects__heading'>Mine projekter</h1>
+        <section className='projects-list'>
+            <h1 className='projects-list__heading'>Mine projekter</h1>
             <div className="projects">
                 {projects.length > 0 && projects.map((project, index) => (
                     <div className="project" key={index}>
@@ -16,7 +16,7 @@ function ProjectsList({ projects }) {
                     </div>
                 ))}
             </div>
-        </>
+        </section>
     );
 }
 

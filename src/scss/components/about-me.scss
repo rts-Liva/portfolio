@@ -23,6 +23,7 @@
 
 .skills {
     padding-inline: 1rem;
+    margin-bottom: 5rem;
 
     &__heading {
         font-size: 1em;
@@ -42,5 +43,13 @@
             background-color: root.$transparent-black;
             border-radius: .8rem;
         }
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .about-me, .skills {
+        width: 41.875rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }

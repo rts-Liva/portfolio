@@ -7,11 +7,13 @@
     gap: .3rem;
     margin-block: 1rem 5rem;
 
-    &__heading {
-        padding-inline: 1rem;
-        font-size: 1.3em;
-        font-weight: 500;
-        margin-top: 1rem;
+    &-list {
+        &__heading {
+            padding-inline: 1rem;
+            font-size: 1.3em;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
     }
 }
 
@@ -50,5 +52,19 @@
         font-size: .75em;
         text-decoration: underline;
         color: root.$purple;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .projects-list {
+        width: 41.875rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 }
