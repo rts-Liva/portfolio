@@ -1,20 +1,31 @@
 import ViteExpress from "vite-express";
 import express from "express";
 import { MongoClient, ObjectId } from "mongodb";
+import dotenv from "dotenv";
 
-const PORT = 3000;
-const MONGO_USER = 'liva';
-const MONGO_PASSWORD = 'L7a6Bt76TtSmCdEL';
-const MONGO_CONNECTION_STRING = `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@cluster0.4itoe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+dotenv.config()
+const PORT = process.env.PORT;
+const MONGO_CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING;
 
 const app = express();
 const client = new MongoClient(MONGO_CONNECTION_STRING);
 const database = client.db('portfolio');
 
+app.use((req, res, next) => {
+    const allowedOrigins = ['https://portfolio-566e.onrender.com', 'http://localhost:3001'];
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        res.header('Access-Control-Allow-Origin', origin);
+    };
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+})
+
 app.use(express.json());
 
 app.get('/api/projects/latest', async (_, response) => {
-    const data = database.collection('projects').find().sort({_id: -1});
+    const data = database.collection('projects').find().sort({ _id: -1 });
 
     response.json(await data.toArray());
 });
@@ -27,4 +38,6 @@ app.get('/api/projects/:id', async (request, response) => {
     response.json(data);
 });
 
-ViteExpress.listen(app, PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => {
+    console.log(`server is running on port ${PORT}`);
+})

@@ -1,8 +1,8 @@
 import { useParams } from "react-router";
+import { useEffect, useState } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import '../../scss/components/project-details.scss';
-import { useEffect, useState } from "react";
 
 function DetailsPage() {
     const { id } = useParams();
@@ -10,14 +10,14 @@ function DetailsPage() {
 
     useEffect(() => {
         async function fetchProjectDetails() {
-            const response = await fetch(`/api/projects/${id}`);
+            const response = await fetch(`${import.meta.env.VITE_URL}/api/projects/${id}`);
             const data = await response.json();
 
             setDetails(data);
         }
 
         fetchProjectDetails();
-    },[])
+    }, [])
 
     return (
         <>
