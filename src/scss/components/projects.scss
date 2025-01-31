@@ -3,9 +3,9 @@
 .projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: .3rem;
     margin-block: 1rem 5rem;
+    margin-inline: 1rem;
 
     &-list {
         &__heading {
@@ -20,7 +20,6 @@
 .project {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: .3rem;
     padding: .5rem;
     padding-bottom: .8rem;
@@ -46,6 +45,10 @@
         font-size: 1em;
         font-weight: 500;
         color: root.$black;
+    }
+
+    &__text {
+        font-size: .75em;
     }
 
     &__link {
