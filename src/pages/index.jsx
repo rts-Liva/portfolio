@@ -9,7 +9,7 @@ function IndexPage() {
 
     useEffect(() => {
         async function fetchNewestProject() {
-            const response = await fetch('/api/projects/latest');
+            const response = await fetch(`${import.meta.env.VITE_URL}/api/projects/latest`);
             const data = await response.json();
 
             setNewestProject(data[0]);
