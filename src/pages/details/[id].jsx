@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { useEffect, useState } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
@@ -25,7 +25,7 @@ function DetailsPage() {
             <section className="project-details">
                 <img src={details.path} alt="project poster" className="project-details__poster" />
                 <h1 className="project-details__name">{details.name}</h1>
-                <a href={details.github} target="_blank" className="project-details__link">Github repository</a>
+                <Link to={details.github} target="_blank" className="project-details__link">Github repository</Link>
                 <h2 className="project-details__title">Beskrivelse</h2>
                 <p className="project-details__text">{details.description}</p>
             </section>

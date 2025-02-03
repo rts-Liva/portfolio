@@ -1,4 +1,4 @@
-import { CiLinkedin } from "react-icons/ci";
+import { LiaLinkedin } from "react-icons/lia";
 import { FaRegCopyright } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { IoLogoGithub } from "react-icons/io";
@@ -21,10 +21,10 @@ function Footer() {
                 </nav>
                 <nav>
                     <ul className="footer__list">
-                        <li><a href="tel:+4542250625"><FiPhone color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></a></li>
-                        <li><a href="mailto:liva@baretten.dk"><FiMail color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></a></li>
-                        <li><a href="https://www.linkedin.com/in/liva-kuhlmann-695194292/" target="_blank"><CiLinkedin color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></a></li>
-                        <li><a href="https://github.com/rts-Liva" target="_blank"><IoLogoGithub color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></a></li>
+                        <li><Link to="tel:+4542250625"><FiPhone color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></Link></li>
+                        <li><Link to="mailto:liva@baretten.dk"><FiMail color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></Link></li>
+                        <li><Link to="https://www.linkedin.com/in/liva-kuhlmann-695194292/" target="_blank"><LiaLinkedin color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></Link></li>
+                        <li><Link to="https://github.com/rts-Liva" target="_blank"><IoLogoGithub color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></Link></li>
                     </ul>
                 </nav>
             </div>

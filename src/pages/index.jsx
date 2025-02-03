@@ -26,7 +26,7 @@ function IndexPage() {
                 <p className="home__sub-heading">til mit portfolio.</p>
                 <p className="home__text">Mit navn er Liva Kuhlmann. Jeg er en studerende webudvikler med fokus på moderne, effektive, og brugervenlige løsninger. Kodning er en stor passion af min, og jeg er altid på jagt efter nye udfordringer.</p>
                 <p className="home__text">Jeg søger en praktikplads, hvor jeg kan anvende mine færdigheder i et professionelt miljø, lære fra dygtige udviklere og bidrage til spændende projekter. Jeg ser frem til at udvide min viden om webudvikling.</p>
-                <a href={newestProject.github} target="_blank" className="home__link">Se mit nyeste projekt</a>
+                <Link to={newestProject.github} target="_blank" className="home__link">Se mit nyeste projekt</Link>
             </section>
             <Footer />
         </>

@@ -13,7 +13,7 @@ function ProjectsList({ projects }) {
                             <div className="project__info">
                                 <Link to={`/details/${project._id}`}><h2 className="project__name">{project.name}</h2></Link>
                                 <p className='project__text'>{project.miniDescription}</p>
-                                <a href={project.github} target="_blank" className="project__link">Github repository</a>
+                                <Link to={project.github} target="_blank" className="project__link">Github repository</Link>
                             </div>
                         </div>
                     ))}
