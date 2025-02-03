@@ -1,8 +1,8 @@
 @use '../placeholders/root.scss';
 
 .home {
+    margin-top: 1rem;
     padding-inline: 1rem;
-    margin-block: 1rem 5rem;
 
     &__heading {
         font-size: 1.3em;
