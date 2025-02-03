@@ -21,7 +21,7 @@ function Footer() {
                 </nav>
                 <nav>
                     <ul className="footer__list">
-                        <li><a href="tel:+42250625"><FiPhone color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></a></li>
+                        <li><a href="tel:+4542250625"><FiPhone color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></a></li>
                         <li><a href="mailto:liva@baretten.dk"><FiMail color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></a></li>
                         <li><a href="https://www.linkedin.com/in/liva-kuhlmann-695194292/" target="_blank"><CiLinkedin color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></a></li>
                         <li><a href="https://github.com/rts-Liva" target="_blank"><IoLogoGithub color={darkmode ? '#FFF' : '#000'} className="footer__list-icon" /></a></li>
