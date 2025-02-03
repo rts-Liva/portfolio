@@ -24,6 +24,11 @@
     padding: .5rem;
     padding-bottom: 0;
     
+    &:hover {
+        transition: 200ms;
+        transform: scale(1.05);
+    }
+    
     &:not(:last-of-type) {
         padding-bottom: .8rem;
         border-bottom: 3px solid root.$transparent-black;

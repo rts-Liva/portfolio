@@ -24,6 +24,12 @@
         background-color: root.$transparent-black;
         border-radius: .8rem;
         color: root.$black;
+        
+        &:hover {
+            transition: 200ms;
+            background: none;
+            border: 2px solid root.$transparent-black;
+        }
     }
 }
 

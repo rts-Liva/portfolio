@@ -21,6 +21,11 @@
         &-item {
             font-size: .87em;
             color: root.$black;
+            
+            &:hover {
+                transition: 200ms;
+                color: root.$purple;
+            }
         }
 
         &-icon {

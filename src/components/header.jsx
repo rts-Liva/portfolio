@@ -9,15 +9,12 @@ function Header({ current }) {
     const style = {
         home: {
             color: current === 'home' ? '#7687FC' : darkmode ? '#FFF' : '#000',
-            borderTop: current === 'home' ? '2px solid #7687FC' : 'none'
         },
         aboutMe: {
             color: current === 'about-me' ? '#7687FC' : darkmode ? '#FFF' : '#000',
-            borderTop: current === 'about-me' ? '2px solid #7687FC' : 'none'
         },
         projects: {
             color: current === 'projects' ? '#7687FC' : darkmode ? '#FFF' : '#000',
-            borderTop: current === 'projects' ? '2px solid #7687FC' : 'none'
         },
     }
     return (
@@ -25,9 +22,9 @@ function Header({ current }) {
             <Link to='/'><img src="/logo.svg" alt="logo" className="header__logo" /></Link>
             <nav>
                 <ul className="header__list">
-                    <li><Link to='/' className="header__list-item" style={style.home}>Hjem</Link></li>
-                    <li><Link to='/about-me' className="header__list-item" style={style.aboutMe}>Om mig</Link></li>
-                    <li><Link to='/projects' className="header__list-item" style={style.projects}>Projekter</Link></li>
+                    <li><Link to='/' className={current === 'home' ? 'header__list-item current' : 'header__list-item'} style={style.home}>Hjem</Link></li>
+                    <li><Link to='/about-me' className={current === 'about-me' ? 'header__list-item current' : 'header__list-item'} style={style.aboutMe}>Om mig</Link></li>
+                    <li><Link to='/projects' className={current === 'projects' ? 'header__list-item current' : 'header__list-item'} style={style.projects}>Projekter</Link></li>
                     <Darkmode />
                 </ul>
             </nav>

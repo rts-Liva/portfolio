@@ -21,6 +21,14 @@
 
         &-item {
             font-size: .87em;
+            
+            &.current {
+                border-top: 2px solid root.$purple;
+            }
+            &:hover {
+                transition: 300ms;
+                border-top: 2px solid root.$light-purple;
+            }
         }
     }
 }

@@ -10,6 +10,10 @@ body.dark {
 
     .header {
         border-bottom: 3px solid root.$dark-grey;
+
+        &__list-item:hover {
+            border-top: 2px solid root.$purple;
+        }
     }
 
     h1 {
@@ -20,12 +24,21 @@ body.dark {
         color: root.$white;
     }
 
-    .project:not(:last-of-type) {
-        border-bottom: 3px solid root.$purple;
+    .home__link {
+        background-color: root.$purple;
+
+        &:hover {
+            background: none;
+            border: 2px solid root.$purple
+        }
     }
 
-    .skills__list-item, .home__link {
+    .skills__list-item {
         background-color: root.$purple;
+    }
+
+    .project:not(:last-of-type) {
+        border-bottom: 3px solid root.$purple;
     }
 
     .footer {
